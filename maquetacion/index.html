@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Proyecto Peliculas</title>
+</head>
+<body>
+    <div className="layout">
+        {/*Cabecera*/}
+        <header className="header">
+            <div style="margin-left:10px">
+                <img src="imagenes/book.png" className="libroimg">
+                <h1 className="titulo">Book Store</h1>
+            </div>
+        </header>
+
+        <div className="panelnav with-nav-tabs panel-primary">
+            <div className="panel-heading">
+              <ul className="nav nav-tabs">
+                <li className="active"><a data-toggle="tab" href="#home">Consultas</a></li>
+                <li ><a data-toggle="tab" href="#tab1primary">Stock</a></li>
+                <li><a data-toggle="tab" href="#tab2primary">Venta</a></li>
+                <li><a data-toggle="tab" href="#tab3primary">Clientes</a></li>
+                <li><a data-toggle="tab" href="#tab4primary">Usuarios</a></li>
+                <li><a data-toggle="tab" href="#tab5primary">Sistema</a></li>
+              </ul>
+            </div>
+
+            <div className="panel-body">
+                <div className="tab-content">
+                    <div className="tab-pane fade active in" id="home">
+                        <div className="imagen_nav">
+                            <div className="center_image">
+                                <button type="button">  
+                                    <img src="imagenes/search.png" alt="Texto alternativo" className="each_imagen_nav">
+                                </button>
+                                <p><strong>Libros</strong></p>
+                            </div>
+                            <div className="center_image">
+                                <button type="button">  
+                                    <img src="imagenes/usuarios.png" alt="Texto alternativo" className="each_imagen_nav">
+                                </button>
+                                <p><strong>Usuarios</strong></p>
+                            </div>    
+                            <div className="center_image">
+                                <button type="button">  
+                                    <img src="imagenes/stock.png" alt="Texto alternativo" className="each_imagen_nav">
+                                </button>
+                                <p><strong>Stock</strong></p>
+                            </div>    
+                            <div className="center_image">
+                                <button type="button">  
+                                    <img src="imagenes/cliente.png" alt="Texto alternativo" className="each_imagen_nav">
+                                </button>
+                                <p><strong>Clientes</strong></p>
+                            </div>    
+                            <div className="center_image">
+                                <button type="button">  
+                                    <img src="imagenes/venta.png" alt="Texto alternativo" className="each_imagen_nav">
+                                </button>
+                                <p><strong>Ventas</strong></p>
+                            </div>    
+                        </div>    
+                    </div>
+                    
+                    <div className="tab-pane fade" id="tab1primary">Primary 1</div>
+                    <div className="tab-pane fade" id="tab2primary">Primary 2</div>
+                    <div className="tab-pane fade" id="tab3primary">Primary 3</div>
+                </div>
+            </div>
+        </div>  
+        {/*Contenido principal*/}
+        <section className="content">
+            
+        </section>
+
+        {/*Pie de pagina*/}
+        <footer className="footer">
+            &copy; Boherdi Electronica SRL
+        </footer>
+
+    </div>
+</body>
+</html>
